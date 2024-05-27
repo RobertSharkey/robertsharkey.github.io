@@ -14,9 +14,9 @@ footer.theme-dark   { background-color: #0f172a }
 
 header .col-text h2, .col-1 > h3 { line-height: 1.8 }
 
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
+ 
+    .p{font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+    }
   
