@@ -1,10 +1,3 @@
-.h2 {
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    }
-
-
 
 
 nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #0f172a }
@@ -25,3 +18,10 @@ header .col-text h2, .col-1 > h3 {
     font-weight: 400;
     font-style: normal;
     line-height: 1.8 }
+
+
+    header .col-text h2, .col-1 > h2{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
