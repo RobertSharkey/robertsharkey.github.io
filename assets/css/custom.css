@@ -31,3 +31,9 @@ h1{
             font-weight: 400;
             font-style: normal;
           }
+
+          header.theme-dark .badge{
+            background-color: #48bb78;
+            color: #008080;
+            font-size: 2rem;
+          }
