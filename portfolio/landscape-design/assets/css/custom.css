@@ -1,21 +1,68 @@
-* { margin: 0; padding: 0; border: none }
-*, *::before, *::after { box-sizing: border-box }
-html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
-scroll-behavior: smooth; scroll-padding-top: 20px }
-body { line-height: 1.5; min-height: 100vh }
-@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
-@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
-img { width: 100%; height: auto; display: block }
-input, button, textarea, select { font: inherit }
+
+
+
 /* Desktops */
 @media (min-width: 768px) {
- 
+
  }
  
  /* Mobiles */
  @media (max-width: 767px) {
   
  }
+
+/* Base styles for the header */
+header {
+  display: flex;
+  flex-direction: row; /* Default to side-by-side layout */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Style for the two columns inside the header */
+.col-2 {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Make the image responsive */
+.col-visual img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Reverse the columns on mobile and center the text */
+@media (max-width: 767px) {
+  header {
+      flex-direction: column-reverse; /* Stack columns vertically */
+      text-align: center;
+  }
+
+  .col-2 {
+      width: 100%; /* Make each column take full width */
+      padding: 10px 0; /* Adjust padding for mobile */
+  }
+
+  /* Make buttons stack vertically on mobile */
+  .container-btn {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .btn {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  /* Adjust image size for smaller screens */
+  .col-visual img {
+      max-width: 80%; /* Reduce image size on mobile */
+  }
+}
 
 nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #0f172a }
 
@@ -117,5 +164,5 @@ h1{
                 !important }
             
 
-
+              
 
