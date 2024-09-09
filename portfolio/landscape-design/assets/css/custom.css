@@ -13,10 +13,14 @@
 
 /* Make the image responsive */
 .col-visual img {
-  max-width: 100%;
+  width: 65%;
+  max-width: 70%;
   height: auto;
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 95px;
+  padding: 50px;
 }
 
 /* Reverse the columns on mobile and center the text */
